@@ -1,0 +1,97 @@
+
+.container{
+    max-width: 1200px;
+    margin: 1.5em auto;
+    padding: 1.5em;
+    /* background-color: rgb(245, 228, 228); */
+}
+h1{
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-weight:800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.menu{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+}
+.menu-group-heading{
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(133, 18, 18);
+    text-align: left;
+
+}
+
+.menu-group-heading:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(133, 18, 18);
+
+}
+
+.menu-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item{
+    display: flex;
+}
+
+.menu-item-text{
+    flex-grow: 1;
+}
+
+.menu-item-heading{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted black;
+}
+
+.menu-item-name{
+    margin-right: 1.5em;
+}
+
+.menu-item-description{
+    line-height: 1.7;
+}
+
+.menu-item-image{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius:0;
+    margin-right: 1.5em;
+    transition: .5s;
+}
+.menu-item:hover img{
+    border-radius: 70%;
+}
+
+h1:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(133, 18, 18);
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .menu{
+        font-size: 16px;
+    }
+    .menu-group{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-item-image{
+        width: 125px;
+        height: 125px;
+    }
+    
+}

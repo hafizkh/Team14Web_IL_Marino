@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+
+    
+}
+input[type=text] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: auto;
+    row-gap: 10px;
+    width: 250px;
+    height: 35px;
+    margin-bottom: 25px;}
+input[type=number] {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 25px;}
+input[type=time] {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 25px;}
+    
+input[type=date]{
+    width: 250px;
+    height: 35px;
+    margin-bottom: 25px;}
+textarea{
+    width: 250px;
+    height: 75px;
+    margin-bottom: 25px;
+    }
+    
+.button {
+border:1px;
+color: rgb(255, 255, 255);
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid rgb(245, 228, 228);
+border-radius: 12px;        
+}
+.button1 {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(160, 134, 134);
+    transition-duration: 0.9s;
+    
+}
+.button:hover {
+    background-color: #c99d63; 
+    color: white;
+  }
