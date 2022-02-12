@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/hafiz-styles.css"> -->
+    <link rel="stylesheet" href="css/hafiz-styles.css">
     <link rel="stylesheet" href="css/Styles-Ahmed.css">
 </head>
 
@@ -321,53 +321,10 @@
 
     <div id="navitem">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./Order and Reservation.html">Orders and Reservations</a></li>
-            <li><a href="./Contact us.html">Contact Us</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./menu.php">Menu</a></li>
+            <li><a href="./Order and Reservation.php">Orders and Reservations</a></li>
+            <li><a href="./Contact us.php">Feedback & Contact Us</a></li>
         </ul>
     </div>
 </nav>
-
-
-<body>
-
-    <h2>Our Services</h2>
-    <div class="services">
-        <img src="./images/PizzaCloseup.jpg" alt="Food ordering">
-        <img src="./images/ChattingPeople.jpg" alt="Catering">
-        <img src="./images/BulkOrders.jpg" alt="Bulk Ordering">
-    </div>
-
-
-
-
-</body>
-<div class="footer-container">
-<footer>
-    <div class="footleft">
-
-        <p>Il Marino Restaurant</p>
-        <p>Address</p>
-        <p>Tel. +358 2373 1462</p>
-
-
-    </div>
-    <div class="footmid">
-        <p>
-            2021-2022 &copy;, All rights reserved
-        </p>
-    </div>
-    <div class="footright">
-
-        <p>Opening hours</p>
-        <p> Mon-Fri: 9.30-22.30</p>
-        <p>Sat: 10.30-23.00</p>
-        <p> Sun: Closed</p>
-
-    </div>
-</footer>
-</div>
-
-
-</html>
