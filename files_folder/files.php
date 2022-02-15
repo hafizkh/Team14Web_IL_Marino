@@ -12,7 +12,7 @@ It also will help you to practice utlizing GitHub in project work
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     # Step 4: Close the file 
 
-    # 2. Uploaing files 
+    # 2. Uploading files 
     # Step 1: Create a simple html form to upload a file. 
     # Step 2: You are required to limit the upload file size to 2 MB. 
     # Step 3: Make sure that users can submit only images. 
@@ -32,51 +32,48 @@ else{
 }
 
 echo "<h2>Creating file</h2>";
-
-$members_name = fopen('members_name.txt' , 'w') or die ("Failed to create");
-$txt = "Team number: 14 and Members name:  Anton , Hafiz and Syed ";
-
-fwrite($members_name, $txt);
-
-fclose($members_name);
-
-echo "<h2>Reading file</h2>";
-
 $fname = "members_name.txt";
 
-$handle = fopen($fname, 'r');
+$membersNamesOfTeam = fopen($fname, "r");
 
-$contents = fread($handle, filesize($fname));
+if(!$membersNamesOfTeam){
+    die ("Failed to Open");
+}
 
-echo $contents;
+readfile($fname);
 
-fclose($handle);
+echo "<h2>Reading/Writing in file</h2>";
 
-echo "<h2>Read the customized file</h2>";
+$membersNamesOfTeam = fopen($fname, 'w');
 
-$fh = fopen('members_name.txt' , 'r') or die ('Failed to read the file');
 
-$text = fread ($fh , 5);
+$txt = "Team number: 14 and Members name:  Anton , Hafiz and Syed";
 
-echo $text;
+fwrite ($membersNamesOfTeam, $txt);
 
-fclose($fh);
+$handle = fopen($fname,'r');
+
+$content = fread($handle, filesize($fname));
+
+echo $content;
+
+fclose($membersNamesOfTeam);
 
 
 echo "<h2>Read the Remote file using URL</h2>";
 
 
-$new_handle = fopen("https://raw.githubusercontent.com/hafizkh/Team14Web/main/members_name.txt" , "rb");
+$fileUrl = fopen("https://raw.githubusercontent.com/hafizkh/Team14Web/main/members_name.txt" , "rb");
 
-if (FALSE === $new_handle){
+if (FALSE === $fileUrl){
     exit("Failed to open the stream");
 }
 
-$cont = stream_get_contents($new_handle);
+$cont = stream_get_contents($fileUrl);
 
 echo $cont;
 
-fclose ($new_handle);
+fclose ($fileUrl);
 
 
 ?>
