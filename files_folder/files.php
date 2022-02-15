@@ -44,7 +44,7 @@ readfile($fname);
 
 echo "<h2>Reading/Writing in file</h2>";
 
-$membersNamesOfTeam = fopen($fname, 'w');
+$membersNamesOfTeam = fopen($fname, "w");
 
 
 $txt = "Team number: 14 and Members name:  Anton , Hafiz and Syed";
