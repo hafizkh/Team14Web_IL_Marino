@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <?php
 
 
@@ -20,3 +21,4 @@
     
 </body>
 </html>
+<?php include 'footer.php' ?>
