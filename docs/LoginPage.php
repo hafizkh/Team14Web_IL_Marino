@@ -1,8 +1,4 @@
-<?php
 
-
-
-?>
 <html>
 <head>
 <title>Log in into your Il Marino account </title>
@@ -12,10 +8,16 @@
 <form>
     <label for="username"></label> Username: <br>
     <input type="text" id="username" name="username"><br>
-    <label for="encpass"></label>Password:<br>
-    <input type="text" id="encpass" name="encpass"><br>
+    <label for="pass"></label>Password:<br>
+    <input type="text" id="pass" name="pass"><br>
     <input type="submit" value="submit"><br>
 </form>    
 </body>
 
 </html>
+<?php
+ $userid=$_GET ['username'];
+ $pass=$_GET ['pass'];
+$EnPass=password_hash($pass,PASSWORD_DEFAULT)
+
+?>
