@@ -22,7 +22,7 @@ foreign key(Post_id) references Posts(Post_id)
 
 );
 create table Login(
-password_enc varchar(40) not null,
+password_enc varchar(100) not null,
 User_id int,
 foreign key (User_id) references Users(User_id)
 );
