@@ -3,7 +3,7 @@ User_id int primary key unique auto_increment,
 Username varchar(100) unique ,
 email varchar(50),
 phonenumber varchar(50),
-staffmem boolean
+staffmem  boolean default false
 );
 create table Post(
 Post_id int primary key unique auto_increment,
