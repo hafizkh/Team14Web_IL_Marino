@@ -19,5 +19,4 @@
  $userid=$_GET ['username'];
  $pass=$_GET ['pass'];
  $EnPass=password_hash($pass,PASSWORD_DEFAULT);
- 
 ?>
