@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <html>
 <head>
 <title>Create a new Il Marino account </title>
@@ -29,3 +30,4 @@ $phone=$_GET["phone"];
 $EncPass=password_hash($password,PASSWORD_DEFAULT);
 
 ?>
+<?php include 'footer.php'?>

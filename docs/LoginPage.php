@@ -1,4 +1,4 @@
-
+<?php include 'header.php'?>
 <html>
 <head>
 <title>Log in into your Il Marino account </title>
@@ -20,3 +20,4 @@
  $pass=$_GET ['pass'];
  $EnPass=password_hash($pass,PASSWORD_DEFAULT);
 ?>
+<?php include 'footer.php'?>
