@@ -28,6 +28,6 @@ $password=$_GET["pass"];
 $email=$_GET["email"];
 $phone=$_GET["phone"];
 $EncPass=password_hash($password,PASSWORD_DEFAULT);
-
+/* check if username already exists,hash the password,insert the data into the users. */
 ?>
 <?php include 'footer.php'?>

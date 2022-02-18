@@ -1,6 +1,6 @@
 <?php include 'header.php'?>
 <?php
-
+/* loop creating news pages from database,format them identically,limit posts on page. */
 
 
 

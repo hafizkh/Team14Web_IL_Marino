@@ -19,5 +19,7 @@
  $userid=$_GET ['username'];
  $pass=$_GET ['pass'];
  $EnPass=password_hash($pass,PASSWORD_DEFAULT);
+/*Add checks if username already exists,compare password hashes*/
 ?>
+
 <?php include 'footer.php'?>
