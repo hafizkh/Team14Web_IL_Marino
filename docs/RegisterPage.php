@@ -22,6 +22,10 @@
 
 
 <?php
-
+$username = $_GET["username"];
+$password=$_GET["pass"];
+$email=$_GET["email"];
+$phone=$_GET["phone"];
+$EncPass=password_hash($password,PASSWORD_DEFAULT);
 
 ?>
