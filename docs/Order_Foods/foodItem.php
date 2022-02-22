@@ -11,7 +11,7 @@ if (!empty($_POST['saveOrder'])) {
         if (!empty($_POST['foodItem'])) {
             foreach ($_POST['foodItem'] as $itemId) {
                 $UserId = $_SESSION['UserId'];
-                $orderSQLQuery = "INSERT INTO `Orders` (`User_id`, `Item_id`) VALUES ('$UserId', '$itemId')";
+                $orderSQLQuery = "INSERT INTO `Orders` (`User_id`, `Item_id`, `Employee_id`) VALUES ('$UserId', '$itemId', '1')";
                 $result = mysqli_query($conn, $orderSQLQuery);
                 if ($result) {
                     $isComplete = true;
