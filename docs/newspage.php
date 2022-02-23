@@ -11,8 +11,8 @@ if(strlen($post_id) > 0 and !is_numeric($post_id))
 {
 echo"Incorect Value Type";
 exit;
-}
-$page=($post_id - 0);*/
+}*/
+$page=($post_id - 0);
 $limitByPage=10;
 $query="select * from Post";
 $result=mysqli_query($conn,$query);
@@ -24,7 +24,7 @@ $page=1;
 $page=$_POST['page'];    
 }
 $firstpageresult=($page-1) * $limitByPage;
-$query="Select *FROM Post Limit" .$firstpageresult .','. $limitByPage ;
+$query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
 $result=mysqli_query($conn,$query);
 while($row = mysqli_fetch_array($result))
 {
