@@ -24,11 +24,12 @@ $page=1;
 $page=$_POST['page'];    
 }
 $firstpageresult=($page-1) * $limitByPage;
+
 $query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
-$result=mysqli_query($conn,$query);
-while($row = mysqli_fetch_all($result))
+/*$result=mysqli_query($conn,$query);*/
+while($row = mysqli_fetch_array($result))
 {
-echo $row['Post_id'].''. $row['Post_id']."<br>";     
+echo $row['Post_id'].''. $row['Text_ps']."<br>";     
 }
 for($page=1;$page<=$pagenumber;$page++)
 {
@@ -41,7 +42,8 @@ echo ('<a href = newspage.php? page="'.$page.'>'.$page.'</a>');
 <h1>News</h1>
 </head>
 <body>
-    
 </body>
+<footer>
+<?php include 'footer.php' ?> 
+</footer>
 </html>
-<?php include 'footer.php' ?>
