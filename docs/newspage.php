@@ -5,14 +5,14 @@
 <?php include './Order_Foods/db.php' ?>
 <?php
 /* loop creating news pages from database,format them identically,limit posts on page. */
-$page_base="newspage.php";
-$post_id=$_POST['post_id'];
+/*$page_base="newspage.php";
+$Post_id=$_POST['Post_id'];
 if(strlen($post_id) > 0 and !is_numeric($post_id))
 {
 echo"Incorect Value Type";
 exit;
 }
-$page=($post_id - 0);
+$page=($post_id - 0);*/
 $limitByPage=10;
 $query="select * from Post";
 $result=mysqli_query($conn,$query);
