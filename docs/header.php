@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Styles-Ahmed.css">
     <link rel="stylesheet" href="css/hafiz-styles.css">
+    <!---Javascript file,"defer" keyword loads the script after the html body.---> 
+    <script defer src="SA form.js"></script>
 </head>
 
 <style>
@@ -329,7 +331,7 @@
             <li><a href="./index.php">Home</a></li>
             <li><a href="./menu.php">Menu</a></li>
             <li><a href="./Order and Reservation.php">Orders and Reservations</a></li>
-            <li><a href="./Contact us.php">Feedback & Contact Us</a></li>
+            <li><a href="./Feedback.php">Feedback & Contact Us</a></li>
         </ul>
     </div>
 </nav>
