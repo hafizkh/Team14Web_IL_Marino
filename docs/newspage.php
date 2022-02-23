@@ -32,7 +32,7 @@ echo $row['Post_id'].''. $row['alphabet']."<br>";
 }
 for($page=1;$page<=$pagenumber;$page++)
 {
-echo ('<a href = newsletter.php? page="'.$page.'>'.$page.'</a>');    
+echo ('<a href = newspage.php? page="'.$page.'>'.$page.'</a>');    
 }
 
 ?>
