@@ -26,7 +26,7 @@ $page=$_POST['page'];
 $firstpageresult=($page-1) * $limitByPage;
 $query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
 $result=mysqli_query($conn,$query);
-while($row = mysqli_fetch_array($result))
+while($row = mysqli_fetch_all($result))
 {
 echo $row['Post_id'].''. $row['Post_id']."<br>";     
 }
