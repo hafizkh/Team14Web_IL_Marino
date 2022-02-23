@@ -11,7 +11,7 @@ if (!empty($_POST['saveOrder'])) {
         if (!empty($_POST['foodItem'])) {
             foreach ($_POST['foodItem'] as $itemId) {
                 $UserId = $_SESSION['UserId'];
-                $orderSQLQuery = "INSERT INTO `Orders` (`User_id`, `Item_id`, `Employee_id`) VALUES ('$UserId', '$itemId', '1')";
+                $orderSQLQuery = "INSERT INTO `Orders` (`User_id`, `Item_id`) VALUES ('$UserId', '$itemId')";
                 $result = mysqli_query($conn, $orderSQLQuery);
                 if ($result) {
                     $isComplete = true;
@@ -47,51 +47,43 @@ if (!empty($_POST['saveOrder'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/Team14WPro/create.php">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Database</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-
-
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    
 
     <div class="container my-3">
-        <h2>Fill in your details</h2>
+        <h2>Select Your Favorite Food</h2>
 
         <div class="form-check">
             <form action="" method="POST" name="">
-            <?php 
+           
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th scope="col">Food Name</th>
+                                   <th scope="col">Food Price</th>
+                                   <th scope="col">Action</th>
+                               </tr>
+                           </thead>
+                           <?php 
                     $foodListSQL = "SELECT * FROM Food_Item";
                     $foodListResult = mysqli_query($conn, $foodListSQL);
                     while($foodListRow = mysqli_fetch_assoc($foodListResult)){
-                        echo "<input type='checkbox' name='foodItem[]' value=".$foodListRow['Item_id']."> ".$foodListRow['Name'] ."<br>"; 
                         
+                        //echo "<input type='checkbox' name='foodItem[]' value=".$foodListRow['Item_id']."> ".$foodListRow['Name'] . "=> ".$foodListRow['FoodPrice']."<br>"; 
+                        
+                        echo "<tr>
+                        <td> ".$foodListRow['Name'] ."</td>
+                        <td> ".$foodListRow['FoodPrice'] . " €</td>
+                        <td> <input type='checkbox' name='foodItem[]' value=". $foodListRow['Item_id']. ">" ."<br>". "</td>
+                    
+                        </tr>";
+                
                     }
                     ?>
-                <input type="submit" name="saveOrder" value="Click to Proceed" name="submit">
-            </form>
-        </div>
+
+</form>
+</table>
+<input type="submit" name="saveOrder" value="Proceed to Payment" name="submit">
+</div>
 
         <!-- <button class="btn btn-primary btn-sm" id="btnClick">Click to proceed</button> -->
     </div>

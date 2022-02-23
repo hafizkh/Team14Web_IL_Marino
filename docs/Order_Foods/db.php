@@ -11,11 +11,11 @@ $dbname = "Team14Web1";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn){
-    // die ("Failed to connect to the Database because of this -->" . mysqli_connect_error());
+    die ("Failed to connect to the Database because of this -->" . mysqli_connect_error());
 }
 
 else {
-    // echo "Conncetion was Successful!";
+    //echo "Conncetion was Successful!";
 }
 
 ?>
