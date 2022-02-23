@@ -14,7 +14,7 @@ exit;
 }
 $page=($post_id - 0);*/
 $limitByPage=10;
-$query="select * from Post";
+$query='select * from Post' ;
 $result=mysqli_query($conn,$query);
 $totalresults=mysqli_num_rows($result);
 $pagenumber=ceil($totalresults/$limitByPage);
