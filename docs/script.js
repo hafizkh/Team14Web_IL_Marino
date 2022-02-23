@@ -3,7 +3,7 @@ function recipeDetails(){
 }
 
 
-onmouseover =  this.style.color = 'blue'; 
-                this.style.fontStyle = 'italic';
-                this.style.backgroundColor  = 'yellow';
-                this.style.fontSize = '2em';
+// onmouseover =  this.style.color = 'blue'; 
+//                 this.style.fontStyle = 'italic';
+//                 this.style.backgroundColor  = 'yellow';
+//                 this.style.fontSize = '2em';

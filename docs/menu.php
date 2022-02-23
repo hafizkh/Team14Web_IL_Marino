@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
-<body>
-    <script src="script.js"></script>
+
+    <!-- <script src="script.js"></script> -->
     <h1>Our Menu</h1>
     <div class="container">
         <div class="menu">
@@ -254,8 +254,4 @@
 
     </div>
 
-
-
-
-</body>
 <?php include 'footer.php' ?>

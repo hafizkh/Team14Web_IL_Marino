@@ -1,3 +1,5 @@
+<!doctype html>
+
 <html lang="en">
 
 <head>
@@ -5,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/hafiz-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Styles-Ahmed.css">
+    <link rel="stylesheet" href="css/hafiz-styles.css">
 </head>
 
 <style>
@@ -133,7 +136,7 @@
         text-align: center;
         padding-top: 40px;
         background-color: rgb(245, 228, 228);
-        padding-bottom: 76;
+        padding-bottom: 76px;
         padding-left: 18px;
         padding-right: 18px;
 
@@ -159,8 +162,10 @@
 
     .footmid {
         text-align: center;
-        padding-left: 30%;
-        padding-right: 30%;
+        /* padding-left: 30%;
+        padding-right: 30%; */
+        margin-left: auto;
+    margin-right: auto;
 
     }
 
@@ -300,7 +305,7 @@
 </style>
 
 
-
+<body>
 <header>
     <title>IL Marino- Best Mediterranean Dishes since 2009 </title>
     <div class="bctx">

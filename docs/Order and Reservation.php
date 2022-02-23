@@ -1,11 +1,11 @@
-<?php include 'header.php' ?>
-
-
-<body>
+<?php include 'header.php'; ?>
 
     <div class="form">
         <h1>Place order</h1>
         <br>
+        <div class="container my-3">
+            <a href="create.php" class="btn btn-outline-dark">Order Now</a>
+</div>
         <a href="https://www.wolt.fi/">
             <img alt="wolt"
                 src="https://38wbse3riso447pt6m3uirjg-wpengine.netdna-ssl.com/wp-content/uploads/2018/10/logo_anim_black.gif"
@@ -48,6 +48,4 @@
 
         </form>
 
-</body>
-
-<?php include 'footer.php' ?>
+<?php include 'footer.php'; ?>
