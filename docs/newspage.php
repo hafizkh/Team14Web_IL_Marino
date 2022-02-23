@@ -2,7 +2,7 @@
 <?php include 'header.php'?>
 <html lang="en">
 <head>
-<?php include 'db.php' ?>
+<?php include './Order_Foods/db.php' ?>
 <?php
 /* loop creating news pages from database,format them identically,limit posts on page. */
 $page_base="newspage.php";
