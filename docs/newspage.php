@@ -1,25 +1,43 @@
+
 <?php include 'header.php'?>
+<html lang="en">
+<head>
+<?php include 'db.php' ?>
 <?php
 /* loop creating news pages from database,format them identically,limit posts on page. */
 $page_base="newspage.php";
-$user_id=$_POST['user_id'];
-if(strlen($user_id) > 0 and !is_numeric($user_id))
+$post_id=$_POST['post_id'];
+if(strlen($post_id) > 0 and !is_numeric($post_id))
 {
 echo"Incorect Value Type";
+exit;
 }
-
-
-
-
-
-
-
-
+$page=($post_id - 0);
+$limitByPage=10;
+$query="select * from Post";
+$result=mysqli_query($conn,$query);
+$totalresults=mysqli_num_rows($result);
+$pagenumber=ceil($totalresults/$limitByPage);
+if (!isset($_POST['page'])){
+$page=1;    
+}else{
+$page=$_POST['page'];    
+}
+$firstpageresult=($page-1) * $limitByPage;
+$query="Select *FROM Post Limit" .$firstpageresult .','. $limitByPage ;
+$result=mysqli_query($conn,$query);
+while($row = mysqli_fetch_array($result))
+{
+echo $row['post_id'].''. $row['alphabet']."<br>";     
+}
+for($page=1;$page<=$pagenumber;$page++)
+{
+echo ('<a href = newsletter.php? page="'.$page.'>'.$page.'</a>');    
+}
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
+
 <h1>News</h1>
 </head>
 <body>
