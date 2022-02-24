@@ -37,7 +37,7 @@ echo ('<a href = newspage.php? page="'.$page.'>'.$page.'</a>');
 }
 
 ?>
-<!DOCTYPE html>
+
 
 <h1>News</h1>
 </head>
