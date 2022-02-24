@@ -29,7 +29,7 @@ $query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
 /*$result=mysqli_query($conn,$query);*/
 while($row = mysqli_fetch_array($result))
 {
-echo $row['Post_id'].''. $row['Text_ps']."<br>";     
+echo $row['Header'].''.$row['Post_id'].''. $row['Employee_id'] ."<br>". $row['date_ps']."<br>". $row['Text_ps'];     
 }
 for($page=1;$page<=$pagenumber;$page++)
 {
