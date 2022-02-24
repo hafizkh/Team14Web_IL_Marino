@@ -17,9 +17,9 @@ $page=$_POST['page'];
 }
 $firstpageresult=($page-1) * $limitByPage;
 
-$query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
-
-while($row = mysqli_fetch_array($result))
+$query="Select * FROM Post Limit $firstpageresult , $limitByPage" ;
+$result1=mysqli_query($conn,$query);
+while($row = mysqli_fetch_array($result1))
 {
 echo '<div class="poster">'.
 '<div class="postid"> Post id : '.$row['Post_id'].'</div>'.
