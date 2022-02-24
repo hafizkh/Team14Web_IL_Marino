@@ -1,9 +1,11 @@
 
 <?php include 'header.php'?>
 <html lang="en">
-<head>
+<head></head>
 <?php include './Order_Foods/db.php' ?>
-<?php
+<body>
+ <?php
+
 /* loop creating news pages from database,format them identically,limit posts on page. */
 /*$page_base="newspage.php";
 $Post_id=$_POST['Post_id'];
@@ -29,7 +31,10 @@ $query="Select * FROM Post Limit" .$firstpageresult .','. $limitByPage ;
 /*$result=mysqli_query($conn,$query);*/
 while($row = mysqli_fetch_array($result))
 {
-echo $row['Header']." Post id : ".$row['Post_id']." Author id : ". $row['Employee_id'] ."<br>Date :". $row['date_ps']."<br>". $row['Text_ps'];     
+echo $row['Header']." Post id : ".$row['Post_id']." Author id : ". $row['Employee_id'] .
+"<br>Date :". $row['date_ps'].
+"<br>". $row['Text_ps']."<br>";
+echo "";     
 }
 for($page=1;$page<=$pagenumber;$page++)
 {
@@ -40,8 +45,8 @@ echo ('<a href = newspage.php? page="'.$page.'>'.$page.'</a>');
 
 
 <h1>News</h1>
-</head>
-<body>
+
+
 </body>
 <footer>
 
