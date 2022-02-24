@@ -44,6 +44,7 @@ echo ('<a href = newspage.php? page="'.$page.'>'.$page.'</a>');
 <body>
 </body>
 <footer>
-<?php include 'footer.php' ?> 
+
 </footer>
 </html>
+<?php include 'footer.php' ?> 
