@@ -42,6 +42,24 @@ echo '<div class="commen">'
 .'</div>';
 }
 }
+?>
+<html>
+<body>
+<form>
+ <label for="userid" >User id :</label><br>
+ <input type="text" id="userid" name="userid"><br>
+ <label for="username">Username:</label><br>
+ <input type="text" id="username" name="username"><br>
+ <label for="email">Email:</label><br>
+ <input type="text" id="email" name="email"><br>
+ <label for="phonenum">Phone number:</label><br>
+ <input type="text" id="phonenum" name="phonenum"><br>
+</form>
+</body>
+</html>
+
+
+<?php
 }
 ?>
 <html>
