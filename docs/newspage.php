@@ -6,9 +6,9 @@
  <?php
 
 $limitByPage=5;
-$query='select * from Post' ;
-$result=mysqli_query($conn,$query);
-$totalresults=mysqli_num_rows($result);
+$query='SELECT * from Post' ;
+$resultpost=mysqli_query($conn,$query);
+$totalresults=mysqli_num_rows($resultpost);
 $pagenumber=ceil($totalresults/$limitByPage);
 if (!isset($_POST['page'])){
 $page=1;    
@@ -17,10 +17,11 @@ $page=$_POST['page'];
 }
 $firstpageresult=($page-1) * $limitByPage;
 
-$query="Select * FROM Post Limit $firstpageresult , $limitByPage" ;
-$result1=mysqli_query($conn,$query);
-while($row = mysqli_fetch_array($result1))
+$query='SELECT * FROM Comments' ;
+$resultcom=mysqli_query($conn,$query);
+while($row = mysqli_fetch_array($resultpost))
 {
+$postid=$row['Post_id'];    
 echo '<div class="poster">'.
 '<div class="postid"> Post id : '.$row['Post_id'].'</div>'.
 '<div class="Emp_id"> Author id :' . $row['Employee_id'] .'</div>'.
@@ -28,10 +29,19 @@ echo '<div class="poster">'.
 '<div class="header">'. $row['Header'].'</div>'."<br>".
 '<div class="text">'. $row['Text_ps'].'</div>'."<br>".
     '</div>';
-
+while($row=mysqli_fetch_array($resultcom) && $postid == $row['Post_id'] )
+{
+echo '<div class="commen">'
+.'<div class="comid">'. $row['Comment_id'] .'</div>'
+.'<div class="userid">'. $row['User_id'] .'</div>'
+.'<div class="textcom"> '. $row['User_id'] .'</div>'
+.'<div class="postidOncom">'. $row['Post_id'] .'</div>  '
+.'</div>';
+}
 }
 ?>
 <html>
+
  <style>
 .poster{
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
