@@ -64,6 +64,7 @@ echo '<div class="commen">'
  
 </form>
 </body>
+-->
 </html>
 <?php
 /*
@@ -80,6 +81,7 @@ $sql="INSERT INTO Users (username,email,phonenumber) Values ($username,$email,$p
 $sql="SELECT Users";
 $sql="INSERT INTO Comments()";
 echo "new user created";
+
 
 }
 */
