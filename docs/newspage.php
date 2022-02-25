@@ -35,10 +35,10 @@ while($row2=mysqli_fetch_array($resultcom) )
 {
  if($postid == $row2['Post_id'] ){   
 echo '<div class="commen">'
-.'<div class="comid">'. $row2['Comment_id'] .'</div>'
-.'<div class="userid">'. $row2['User_id'] .'</div>'
-.'<div class="textcom"> '. $row2['text_cm'] .'</div>'
-.'<div class="postidOncom">'. $row2['Post_id'] .'</div>  '
+.'<div class="comid"> Comment id: '. $row2['Comment_id'] .'</div>'
+.'<div class="userid"> User_id:'. $row2['User_id'] .'</div> '
+.'<div class="textcom"> Comment: <br>'. $row2['text_cm'] .'</div><br>'
+.'<div class="postidOncom">Related to number '. $row2['Post_id'] .' Post</div>  '
 .'</div>';
 }
 }
@@ -47,7 +47,7 @@ echo '<div class="commen">'
 <html>
 
  <style>
-.poster{
+.poster,.commen{
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 padding: 20px 10px 20px 30px;
 background-color: whitesmoke ;
@@ -69,6 +69,6 @@ for($page=1;$page<= $pagenumber;$page++)
 {
 echo '<a href = "newspage.php?page='.$page.'">'.$page.'</a>';    
 }
-
+$conn->close();
 ?>
 <?php include 'footer.php' ?> 
