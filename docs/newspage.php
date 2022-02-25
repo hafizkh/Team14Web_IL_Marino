@@ -17,8 +17,8 @@ $page=$_POST['page'];
 }
 $firstpageresult=($page-1) * $limitByPage;
 
-$query='SELECT * FROM Comments' ;
-$resultcom=mysqli_query($conn,$query);
+
+
 while($row = mysqli_fetch_array($resultpost))
 {
 $postid=$row['Post_id'];    
@@ -29,14 +29,18 @@ echo '<div class="poster">'.
 '<div class="header">'. $row['Header'].'</div>'."<br>".
 '<div class="text">'. $row['Text_ps'].'</div>'."<br>".
     '</div>';
-while($row=mysqli_fetch_array($resultcom) && $postid == $row['Post_id'] )
+ $query='SELECT * FROM Comments' ;
+$resultcom=mysqli_query($conn,$query);   
+while($row2=mysqli_fetch_array($resultcom) )
 {
+ if($postid == $row2['Post_id'] ){   
 echo '<div class="commen">'
-.'<div class="comid">'. $row['Comment_id'] .'</div>'
-.'<div class="userid">'. $row['User_id'] .'</div>'
-.'<div class="textcom"> '. $row['User_id'] .'</div>'
-.'<div class="postidOncom">'. $row['Post_id'] .'</div>  '
+.'<div class="comid">'. $row2['Comment_id'] .'</div>'
+.'<div class="userid">'. $row2['User_id'] .'</div>'
+.'<div class="textcom"> '. $row2['text_cm'] .'</div>'
+.'<div class="postidOncom">'. $row2['Post_id'] .'</div>  '
 .'</div>';
+}
 }
 }
 ?>
