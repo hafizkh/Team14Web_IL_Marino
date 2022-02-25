@@ -17,8 +17,6 @@ $page=$_POST['page'];
 }
 $firstpageresult=($page-1) * $limitByPage;
 
-
-
 while($row = mysqli_fetch_array($resultpost))
 {
 $postid=$row['Post_id'];    
@@ -42,25 +40,49 @@ echo '<div class="commen">'
 .'</div>';
 }
 }
-?>
+
+
+
+
+
+}?>
 <html>
 <body>
+<!--    
 <form>
- <label for="userid" >User id :</label><br>
- <input type="text" id="userid" name="userid"><br>
- <label for="username">Username:</label><br>
- <input type="text" id="username" name="username"><br>
- <label for="email">Email:</label><br>
- <input type="text" id="email" name="email"><br>
+ <label for="usernam">Username:</label><br>
+ <input type="text" id="usernam" name="usernam" required><br>
+ <label for="emails">Email:</label><br>
+ <input type="text" id="emails" name="emails"><br>
  <label for="phonenum">Phone number:</label><br>
  <input type="text" id="phonenum" name="phonenum"><br>
+ <label for="postid">Post_id</label>
+ <input type="text" id="postid" name="postid">
+ <label for="comment">Comment</label>
+ <input type="text" id="comment" name="comment">
+ <input type="submit" value="Submit"><br>
+ 
 </form>
 </body>
 </html>
-
-
 <?php
+/*
+#checks for imputed data
+$username=$_POST['usernam'];
+$email=$_POST['emails'];
+$phone=$_POST['phonenum'];
+$query='SELECT * FROM Users';
+$usercheck=mysqli_query($conn,$query);
+$row3=mysqli_fetch_array($usercheck);
+if( $username!= $row3['Username'] or $email != $row3['email'] or $phone!= $row3['phonenumber'] ){
+echo"No such user exists,creating a new one";
+$sql="INSERT INTO Users (username,email,phonenumber) Values ($username,$email,$phone)";
+$sql="SELECT Users";
+$sql="INSERT INTO Comments()";
+echo "new user created";
+
 }
+*/
 ?>
 <html>
 
