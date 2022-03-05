@@ -1,6 +1,7 @@
 <?php include 'header.php' ?>
 
-    <!-- <script src="script.js"></script> -->
+<body>
+
     <h1>Our Menu</h1>
     <div class="container">
         <div class="menu">
@@ -13,23 +14,11 @@
                     <div class="menu-item-text">
                         <h3 class="menu-item-heading">
                             <span class="menu-item-name">Prawn Salad</span>
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
                             <span class="menu-item-price">€5,90</span>
-
-                           
                         </h3>
                         <p class="menu-item-description">
-                        <span
-                        
-                            onmouseover =  "this.style.color = 'black'; 
-                                            this.style.fontSize = '2em';";
-                                           
-                             onmouseout =  "this.style.fontStyle = 'normal';
-                                            this.style.fontSize = '1em';";>
-
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            </span>
                         </p>
                     </div>
                 </div>
@@ -43,8 +32,6 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
-
                         </p>
                     </div>
                 </div>
@@ -58,8 +45,6 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
-
                         </p>
                     </div>
                 </div>
@@ -73,8 +58,6 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
-
                         </p>
                     </div>
                 </div>
@@ -254,4 +237,8 @@
 
     </div>
 
+
+
+
+</body>
 <?php include 'footer.php' ?>

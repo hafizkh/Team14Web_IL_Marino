@@ -305,7 +305,7 @@
 
 
 <header>
-    <title>IL Marino- Best Mediterranean Dishes since 2009 </title>
+    <title>Admin Portal</title>
     <div class="bctx">
         <a href="index.html">
             <img class="logo" src="images/illogo.jpg" alt="">
@@ -324,10 +324,13 @@
 
     <div id="navitem">
         <ul>
-            <li><a href="./index.php">Home</a></li>
-            <li><a href="./menu.php">Menu</a></li>
-            <li><a href="./Order and Reservation.php">Orders and Reservations</a></li>
-            <li><a href="./feedback.php">Feedback & Contact Us</a></li>
+            <h1>Admin Portal</h1>
         </ul>
     </div>
+    
 </nav>
+<body>
+<h2><a href="SA readFeedback.php">Check Feedback from Customers</a></h2>
+<h2><a href="SA upd-del.php">Check and Manage Reservations</a></h2>
+</body>
+</html>

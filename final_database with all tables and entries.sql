@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Feb 24, 2022 at 04:56 PM
+-- Generation Time: Mar 05, 2022 at 07:12 PM
 -- Server version: 8.0.28
 -- PHP Version: 8.0.15
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `sitedb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin'),
+(5, 'syed', 'syed');
 
 -- --------------------------------------------------------
 
@@ -59,6 +79,14 @@ CREATE TABLE `feedback` (
   `res_id` int NOT NULL,
   `feedback` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`sr_no`, `fname`, `email`, `res_id`, `feedback`) VALUES
+(15, 'Syed Ahmed', 'syedmuaz96@gmail.com', 69, 'Hello'),
+(16, 'Syed Ahmed', 'syedmuaz96@gmail.com', 6516584, 'asdfdsafwqe');
 
 -- --------------------------------------------------------
 
@@ -195,6 +223,15 @@ CREATE TABLE `reservation` (
   `res_tim` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `reservation`
+--
+
+INSERT INTO `reservation` (`res_id`, `cust_name`, `email`, `contact_no`, `res_event`, `no_of_guests`, `res_date`, `res_tim`) VALUES
+(52, 'Syed Ahmed', 'syedmuaz96@gmail.com', '406512464', '686516', '1', '2022-02-11', '19:21'),
+(53, 'Syed Ahmed', 'syedmuaaz87@gmail.com', '406512464', 'fdasfasfafsawqf', '2', '2022-02-19', '19:29'),
+(55, 'Deepak', 'syedmuaz96@hkt.com', '5555351', 'sdfafdasf', '4', '2022-03-15', '21:15');
+
 -- --------------------------------------------------------
 
 --
@@ -224,6 +261,12 @@ INSERT INTO `Users` (`User_id`, `Username`, `email`, `phonenumber`) VALUES
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `Comments`
@@ -291,6 +334,12 @@ ALTER TABLE `Users`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `Comments`
 --
 ALTER TABLE `Comments`
@@ -306,7 +355,7 @@ ALTER TABLE `Employee`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `sr_no` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `sr_no` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `Food_Item`
@@ -336,7 +385,7 @@ ALTER TABLE `Post`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `res_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `res_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `Users`
