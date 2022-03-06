@@ -11,7 +11,7 @@
         <img src="./images/BulkOrders.jpg" alt="Bulk Ordering">
     </div>
 
-
+    <a href="./newspage.php">News</a>
 
 
 </body>
