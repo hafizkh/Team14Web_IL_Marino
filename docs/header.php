@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/hafiz-styles.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="css/Styles-Ahmed.css">
     
     <!---Javascript file,"defer" keyword loads the script after the html body.---> 
