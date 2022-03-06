@@ -79,8 +79,15 @@ h1:hover{
     text-decoration-color: rgb(133, 18, 18);
 
 }
-
-
+.btn_primary{
+    color: #000;
+    border-color: #D7953F;
+}
+.btn_primary:hover{
+    color: #000;
+    background-color: rgb(222, 200, 171);
+    border-color: rgb(222, 200, 171);
+}
 
 @media screen and (min-width: 992px) {
     .menu{

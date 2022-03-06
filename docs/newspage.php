@@ -1,7 +1,7 @@
 
 <?php include 'header.php'?>
 
-<?php include './Order_Foods/db.php' ?>
+<?php include 'db.php' ?>
 <body>
  <?php
 

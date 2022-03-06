@@ -28,7 +28,7 @@ include 'SA Config.php';
 
  <?php
 include 'SA config.php';
-$con=mysqli_connect("db", "sitedb", "password", "sitedb");
+$con=mysqli_connect("db", "root", "password", "Team14Web");
  $q = "select * from feedback";
 
  $query = mysqli_query($con,$q);

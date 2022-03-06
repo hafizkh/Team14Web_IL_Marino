@@ -1,5 +1,5 @@
 <?php
 
-$link= mysqli_connect('db','sitedb','password','sitedb')
+$link= mysqli_connect('db','root','password','Team14Web')
 
 ?>

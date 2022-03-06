@@ -1,4 +1,3 @@
-
 <?php
 include 'header.php';
 include 'SA config.php';
@@ -11,7 +10,7 @@ if(isset($_POST['upload'])){
     $DATE=$_POST['date'];
     $TIME=$_POST['time'];
     
-   #$link=mysqli_connect("db", "sitedb", "password", "sitedb");
+   #$link=mysqli_connect("db", "root", "password", "Team14Web");
 
 }
     $sql="INSERT INTO `reservation`(`cust_name`, `email`, `contact_no`, `res_event`, `no_of_guests`, `res_date`, `res_tim`)  VALUES ('$NAME','$EMAIL',$NUMBER,'$REQUEST','$GUESTS','$DATE','$TIME')";

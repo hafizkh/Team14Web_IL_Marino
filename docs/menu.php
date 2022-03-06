@@ -13,7 +13,6 @@
                     <div class="menu-item-text">
                         <h3 class="menu-item-heading">
                             <span class="menu-item-name">Prawn Salad</span>
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
                             <span class="menu-item-price">€5,90</span>
 
                            
@@ -29,6 +28,8 @@
 
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
+                            <button class="btn btn-outline-primary btn_primary" type="Details" onclick = "recipeDetails()">Read more</button>
+
                             </span>
                         </p>
                     </div>
@@ -43,7 +44,7 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
+                            <button class="btn btn-outline-primary btn_primary" type="Details" onclick = "recipeDetails()">Read more</button>
 
                         </p>
                     </div>
@@ -58,7 +59,7 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
+                            <button class="btn btn-outline-primary btn_primary" type="Details" onclick = "recipeDetails()">Read more</button>
 
                         </p>
                     </div>
@@ -73,7 +74,7 @@
                         <p class="menu-item-description">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, officiis.Lorem ipsum dolor
                             sit amet consectetur adipisicing elit. Provident, excepturi.
-                            <button type="Details" onclick = "recipeDetails()">Read more</button>
+                            <button class="btn btn-outline-primary btn_primary" type="Details" onclick = "recipeDetails()">Read more</button>
 
                         </p>
                     </div>
