@@ -7,22 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user_phone = $_POST['user_phone'];
     $user_email = $_POST['user_email'];
 
-      // $sql1 = "SELECT * FROM `Users` WHERE `email` = '$user_email'";
-
-      // $resultSelect = mysqli_query($conn, $sql1);
-
-      // $row = mysqli_fetch_assoc($resultSelect);
-
       
-      // if (is_array($row)) {
-      //     $_SESSION['UserId'] = $row['User_id'];
-      //     $_SESSION['UserName'] = $row['Username'];
-      //    // $_SESSION['UserEmail'] = $row['email'];
-      //     header('location: foodItem.php');
-      // } else {
-      //     $message = 'Invalid Username or Password!';
-      // }
-
 
     $sql = "INSERT INTO `Users` (`Username`, `email`, `phonenumber`) VALUES ('$user_name', '$user_email', '$user_phone')";
     $result = mysqli_query($conn, $sql);

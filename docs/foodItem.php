@@ -39,7 +39,7 @@ if (!empty($_POST['saveOrder'])) {
                                <tr>
                                    <th scope="col">Food Name</th>
                                    <th scope="col">Food Price</th>
-                                   <th scope="col">Action</th>
+                                   <th scope="col">Select</th>
                                </tr>
                            </thead>
                            <?php 
