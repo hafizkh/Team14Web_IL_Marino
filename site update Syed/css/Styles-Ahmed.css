@@ -11,8 +11,6 @@ h2 {
     text-align: center;
     display: flex;
     flex-direction:column;
-
-    
 }
 input[type=text] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,6 +19,13 @@ input[type=text] {
     width: 250px;
     height: 35px;
     margin-bottom: 25px;}
+input[type=Email] {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: auto;
+        row-gap: 10px;
+        width: 250px;
+        height: 35px;
+        margin-bottom: 25px;}
 input[type=number] {
     width: 250px;
     height: 35px;

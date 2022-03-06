@@ -13,42 +13,49 @@
         </a>
 
         <h2>Reservation</h2>
-
-        <form>
+        
+        <form method="POST" id="form" action="SA create.php" enctype="multipart/form-data" >
+            <div id="error"></div>
             <div>
                 <label for="Name"></label>
-                <input type="text" name="fname" required placeholder="Name">
-            </div>
-            <div>
-                <label for="mNumber"></label>
-                <input type="text" name="pNumber" required placeholder="Phone Number">
+                <input type="text" name="fname" id='firstname' placeholder="Name*">
+                
             </div>
             <div>
                 <label for="Email"></label>
-                <input type="text" name="email" required placeholder="Email">
+                <input type="email" name="email" id='mail'  placeholder="Email*">
+                <div id="error"></div>
+            </div>
+            <div>
+                <label for="mNumber"></label>
+                <input type="text" name="pNumber" required placeholder="Phone Number*">
+                <div class="error"></div>
             </div>
             <div>
                 <label for="date"></label>
-                <input type='date' required placeholder="Date">
+                <input type='date'  name='date' required placeholder="Date*">
+                <div class="error"></div>
             </div>
             <div>
                 <label for="time"></label>
-                <input type='time' required placeholder="Reservation Time">
+                <input type='time'  name='time' required placeholder="Reservation Time*">
+                <div class="error"></div>
             </div>
             <div>
                 <label for="nOfGuests"></label>
-                <input type="number" required placeholder="Number of Guests">
+                <input type="number" name='guests' placeholder="Number of Guests*">
+                
             </div>
             <div>
                 <label for="Requests"></label>
                 <textarea name="Requests" id="" cols="50" rows="5" placeholder="Special Requests"></textarea>
             </div>
-            <button class="Button Button1">Reserve Now</button> 
+            <button name="upload" type="submit" class="Button Button1">Reserve Now</button> 
             </div>
            
 
         </form>
-
+        
 </body>
 
 <?php include 'footer.php' ?>
