@@ -4,7 +4,7 @@
 $servername = "db";
 $username ="root";
 $password = "password";
-$dbname = "Team14Web1";
+$dbname = "Team14Web";
 
 //Establishing the connection
 

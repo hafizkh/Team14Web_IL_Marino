@@ -113,7 +113,7 @@
     }
 
     img {
-        padding: 20px;
+        padding: 6px;
         height: 350px;
         width: 350px;
 
@@ -315,7 +315,7 @@
 <header>
     <title>IL Marino- Best Mediterranean Dishes since 2009 </title>
     <div class="bctx">
-        <a href="index.html">
+        <a href="index.php">
             <img class="logo" src="images/illogo.jpg" alt="">
         </a>
         <h1>IL MARINO</h1>
