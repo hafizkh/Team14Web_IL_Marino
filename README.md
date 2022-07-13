@@ -14,4 +14,7 @@
  
  ### Some ScreenShots of the Website are as follows:
  
+ #### This is Home page
+ ![alt Home Page](doc/images/SS1.JPG)
+ 
  
