@@ -8,8 +8,8 @@
  ### This is the first University project of three members of Restaurant in which user can see menu, order online, reserve the table and give feedback / suggestion. The data for the order and user stors in the DB phpmyadmin where admin can perform CRUD. 
  
  ### Stacks used in website
- - HTML 3
- - CSS 3
+ - HTML5
+ - CSS3
  - PHP
  - My SQL
  - BootStrap 5
